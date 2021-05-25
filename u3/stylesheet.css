@@ -1,0 +1,174 @@
+/* stilinställningar*/
+
+
+
+
+
+
+html, body, div, header, nav, main, section, footer {margin:0;padding:0;} 
+/* tar bort "default värden" för margin och padding för ovanstående elementen*/
+
+/* sätter display till block så att även de gamla webbläasare känner igen layouten */
+header, nav, main, footer, section {display:block;}
+
+html{background-image:url("pics/background.jpg"); background-repeat:repeat; }
+
+header{ padding-left:10px; padding-right:10px; box-shadow:1px 1px 15px #d9d9d9;padding-bottom:5px;}
+
+#wrapper{  max-width: 800px; margin:0 auto;background-color:#f2f2f2; font-family:Monospace; font-size:1.2em; color:#262626;}
+
+#thisPage{background-color:#334d00; font-size:1.1em;}
+
+#contact { margin-left:50%; text-align:right; font-size:0.75em; padding:5px;}
+
+main{padding: 15px; margin-left:27.5%; margin-top:0px;}
+main:after {content:""; display:block; clear:both;}
+
+main h2{padding-left:3%;}
+
+img{max-width:100%; padding-top:5px; max-height:100%;}
+#logo{max-width:100%; float:left;}
+
+
+
+
+/* sortumentsidor*/
+
+#content1{background-color:#f2f2f2; max-width:32%; max-height:32%; float:left;}
+#content2{background-color:#f2f2f2; max-width:32%;max-height:32%; float:left; margin-left:2%;}
+#content3{background-color:#f2f2f2; max-width:32%; max-height:32%; float:left; margin-left:2%;}
+.content p {text-align:center; box-shadow:1px 1px 15px #d9d9d9; max-height:5%;}
+.content img {box-shadow:1px 1px 15px #d9d9d9;}
+
+
+/* navigering*/
+nav{ padding: 10px; margin-bottom: 5px; float:left; width:25%; margin-top:10px; background-color:#f2f2f2;}
+nav ul{list-style:none;padding-left:15px;}
+nav ul li{display:block; margin-right: 10px; margin-bottom:10px;}
+nav ul ul{padding-top:5px;}
+nav a {text-decoration:none; padding:5px; background-color:#669900; display:block;}
+
+nav a:link, nav a:visited {background-color: #669900;  color:#001a33; }
+nav a:hover, nav a:active {background-color: #334d00; text-decoration: underline;}
+
+
+/* footer*/
+#info1{width:49%; float:left; background-color:#f2f2f2; padding-left:20px; padding-top:1px;padding-bottom:2px;}
+#info2{margin-left:51%; padding-top:1px; background-color:#f2f2f2; padding-bottom:1px; padding-left:20px; float:none;}
+
+footer{box-shadow:1px 1px 15px #d9d9d9; background-color:#f2f2f2;}
+
+iframe{border:none;}
+
+/* startsida */
+#start{box-shadow:1px 1px 15px #d9d9d9;}
+#butiken{max-width:100%; max-height:100%; }
+#starttext{max-width:48%;  float:right; font-size:1.2em;}
+#inkomna{max-width:100%; float:none;}
+#visaFler{background-color:#669900; margin-top:5px; float:left; width:100%; padding-left:10px;}
+
+main a:link, main a:visited {background-color: #669900; color:#001a33 ; }
+main a:hover, main a:active {background-color: #334d00; text-decoration: underline;}
+
+/* kontakt */
+iframe{ width:100%; height:100%; margin-top:1px;}
+#content4{max-width:50%; float:left;}
+#content4 img{max-width:100%;}
+#googleMaps{margin-left:54%; max-width:44%;}
+#googleMaps img{max-width:100%;}
+#content5 img{ width:30%; height: 30%; float:left; margin-right:10px;}
+form span {float:left; padding-left:10px;}
+
+
+
+/* ----- Stil för kontaktformuläret ----- */
+
+#contactForm {display:inline-block; margin:0; padding:0.8em 0; background-color:var(--light-bg);
+	border-top:1px solid var(--dark-bg); border-bottom:1px solid var(--dark-bg); text-align:right;}
+
+#contactForm label {display:block;}
+
+#contactForm label span {float:left; margin-right:5px;}
+
+#contactForm input[type=text] {width:30em;}
+#contactForm textarea {width:30em; height:6em;}
+
+
+
+
+
+/* ----- Produktsida ----- */
+
+#produktbilder{ max-width:50%; float:left;}
+#produktbeskrivning{max-width:50%; margin-left:55%;}
+#bild1{max-width:48%; float:left;}
+#bild2{max-width:48%; margin-left:4%;}
+
+#rubrik1{width:50%; float:left;}
+#pris{float:none;}
+#kopKnapp{ max-width: 30%; background-color:#669900; padding:5px; text-align:center;}
+
+/* ----- Bildförstoring ----- */
+#produktbilder input[type=checkbox]{display:none;}
+#produktbilder img {cursor:pointer; transition:transform is ease;}
+#produktbilder input[type=checkbox]:checked + img{transform:scale(3);}
+figure{padding:0px; margin:0px;}
+
+
+
+
+@media screen and (max-width:785px) {
+	nav{float:none; width:90%; margin-bottom:0; padding:10px; margin-top:10px;}
+	main{margin-left:0;}
+	nav ul li{display:inline;}
+	nav a {display:inline;}
+	header{height:100px;  background-size:auto 100px; padding-top:10px; padding-bottom:10px;}
+	#logo{max-width:50%;}
+	nav ul ul{padding-top:0px;}
+	
+	#content4{float:none; max-width:100%;}
+	#googleMaps{margin-left:0%; max-width:100%;}
+	
+	
+	#contactForm {text-align:left;}
+	#contactForm label span {float:none; display:block;}
+	#contact{padding:0;}
+	
+
+}
+
+
+@media screen and (max-width:580px) {
+	nav {float:none; width:100%; padding:0; margin:0; margin-top:9px;}
+	nav ul li{display:block; margin:0; padding:0;}
+	nav a{display:block; border:3px outset #900;}
+	nav ul{padding-right:0; padding:0; margin:0;}
+	main{margin-left:0;}
+	#contact{padding-bottom:40px;}
+	nav p{padding-left:10px;}
+	
+	
+	#content1{max-width:100%; float:top; margin-left:10%;}
+	#content2{max-width:100%; float:top; margin-left:10%;}
+	#content3{max-width:100%; float:top; margin-left:10%;}
+	
+	#info1{ width:100%;}
+	#info2{float: none; margin-left:0; width:100%;}
+	
+#butiken{max-width:100%; max-height:100%; }
+#starttext{max-width:100%;  float:none; }
+
+#produktbilder{ max-width:100%; float:none;}
+#produktbeskrivning{max-width:100%; margin-left:0%; float:none; clear:left;}
+
+
+
+}
+
+@media screen and (max-width:400px) {
+#contact{font-size:0.6em; }
+#contactForm input[type=text], #contactForm textarea {width:96%;}
+}
+
+
+
