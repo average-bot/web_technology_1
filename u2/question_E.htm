@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sv">
+	<head>	
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="UTF-8">
+		<title> Template </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>
+					Fråga E
+				</h1>
+				<h3>	
+					Cascading style sheets
+				</h3>
+			</header>
+		
+			<nav>
+				<ul>
+					<li><a href="question_D.htm">Fråga D</a></li>
+					<li><a href="question_E.htm" id="thisPage">Fråga E</a></li>
+					<li><a href="question_F.htm">Fråga F</a></li>
+					<li><a href="template.htm">Mall</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<section id="question">
+					<p> Delfrågor: </p>
+					<ol>
+						<li>  Vad menas med kaskad i CSS? Hur fungerar det? </li>
+						<li>  I HTML och CSS har vi vidstående kod.
+								Detta resulterar i två boxar.
+								Vad blir de markerade avstånden a och b i pixlar?
+								Beskriv också hur a beräknas. </li>
+					</ol>
+				</section>
+				
+				<h2> Mitt svar </h2>
+				<p>
+					Under de nedstående kapitlarna kommer delfrågorna E1 och E2 att besvaras.
+				</p>
+				
+				<h3> E1 </h3>
+				<p>
+				Kaskad i CSS betyder att stilarna kan falla från en stilark till en annan. Det vill säga att man kan ha flera stilarkar till ett HTML-dokument.
+				</p>
+				
+				<h3> E2 </h3>
+				<p>
+				<ol>
+					<li>
+						Först ska man räkna ut padding i pixlar =&gt; <br> padding = 1.5em = 1,5*(font-size) = 1,5*12px = 18px <br>
+						Sedan kan man räkna ut a med hjälp av att addrera ihop värderna för 2 border, 2 padding och width =&gt; <br>2*border + 2*padding + width = 2*4px +2*18px + 120px = 164 px 
+						<br> <b> a = 164px </b>
+						
+					</li>
+					<li>
+						Marginalerna överlappar varandra, det vill säga att om båda boxarnas marginal är 20px då är mellanrummet mellan boxarna 20px på grund av att marginalerna överlappar varandra.
+						<br> <b> b = 20px. </b>
+					</li>
+				</ol>
+				</p>
+			
+			</main>
+		
+		
+			<footer>
+				<p> Sandra Kaljula - 2020-02-14</p>
+			</footer>
+		</div> <!--End of wrapper-->
+	</body>
+</html>
